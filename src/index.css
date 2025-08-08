@@ -1,0 +1,35 @@
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+}
+.english-text {
+  font-family: 'Inter', sans-serif;
+}
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.bg-hero {
+  background-image: url('/assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+```
